@@ -45,7 +45,7 @@ a:hover{
 
 .chatbot-wrapper .sub-btn{ margin-bottom:120px !important;}
 .drop-text-area {
-    padding: 0% 7%; overflow: hidden;
+    padding: 0% 5%; overflow: hidden;
     max-height: 0;transition: 0.3s ease-in-out 0s;
 }
 .activeItem{ background: #ccc; padding: 20px 2% !important;}
@@ -667,6 +667,7 @@ h5{
     text-align: center;
 }
 .values h5 { padding-left: 8%; text-align: left; font-size:48px !important}
+.values p { padding-left: 8%; text-align: left; font-size:18px !important}
 h5 span{
    font-weight: normal;
    font-family: 'Playfair Display', serif;
@@ -679,12 +680,14 @@ h5 span{
    border-bottom: 1px solid #e7e7e7;
 }
 .faq .container .faq-item{
-   border-top: 1px solid #e7e7e7;
-   padding: 35px 0;
-   position: relative;
-   cursor: pointer;
-   font-size: 22px;
-   font-weight: 500;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 25px 0 10px 0;
+    padding-bottom: 0 !important;
 }
 .faq .container .faq-item::after{
    position: absolute;
@@ -700,7 +703,7 @@ h5 span{
     transition: all 0.5s ease-in-out;
     max-height: 0;
     overflow: hidden;
-    padding: 0px 0 50px 0;
+    padding: 0;
 }
 .start-learning{
     background: #5533FF;
@@ -1540,13 +1543,14 @@ header a .img-fluid{ position: relative; z-index:6;}
        margin-bottom: 50px !important;
    }
     .faq .container .faq-item {
-       border-top: 1px solid #e7e7e7;
-       padding: 17px 3%;
-       position: relative;
-       cursor: pointer;
-       font-size: 18px;
-       font-weight: 500;
-       padding-right: 60px;
+        border-top: 1px solid #e7e7e7;
+        padding: 15px 0;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        font-weight: 500;
+        margin: 15px 0 10px 0;
+        padding-bottom: 0 !important;
    }
     .values {
        margin-top:45px;

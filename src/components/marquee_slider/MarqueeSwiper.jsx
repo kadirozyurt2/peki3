@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SwiperCore, { Autoplay, Parallax } from "swiper";
 import { Swiper, SwiperSlide, SwiperProps } from "swiper/react";
 import "swiper/css";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
 
 const MarqueeSwiper = () => {
+    const router = useRouter();
+    const { locale, locales, defaultLocale } = router;
+    const t = locale === "en" ? en : tr;
+  
   const SwiperProps = {
     speed: 3000,
     autoplay: {
@@ -38,7 +45,7 @@ const MarqueeSwiper = () => {
           <div className="item">
             <a href="#">
               <img src="/images/icon1.svg" alt="" />{" "}
-              <span>Peki integrations to elevate your ecommerce</span>
+              <span>{t.DataCollection}</span>
             </a>
           </div>
         </SwiperSlide>
@@ -46,7 +53,7 @@ const MarqueeSwiper = () => {
           <div className="item">
             <a href="#">
               <img src="/images/icon1.svg" alt="" />{" "}
-              <span>Peki integrations to elevate your ecommerce</span>
+              <span>{t.CostSavings}</span>
             </a>
           </div>
         </SwiperSlide>
@@ -54,7 +61,7 @@ const MarqueeSwiper = () => {
           <div className="item">
             <a href="#">
               <img src="/images/icon1.svg" alt="" />{" "}
-              <span>Peki integrations to elevate your ecommerce</span>
+              <span>{t.MoreSales}</span>
             </a>
           </div>
         </SwiperSlide>
@@ -62,7 +69,7 @@ const MarqueeSwiper = () => {
           <div className="item">
             <a href="#">
               <img src="/images/icon1.svg" alt="" />{" "}
-              <span>Peki integrations to elevate your ecommerce</span>
+              <span>{t.Availability}</span>
             </a>
           </div>
         </SwiperSlide>
@@ -70,15 +77,7 @@ const MarqueeSwiper = () => {
           <div className="item">
             <a href="#">
               <img src="/images/icon1.svg" alt="" />{" "}
-              <span>Peki integrations to elevate your ecommerce</span>
-            </a>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="item">
-            <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
-              <span>Peki integrations to elevate your ecommerce</span>
+              <span>{t.Personalized}</span>
             </a>
           </div>
         </SwiperSlide>

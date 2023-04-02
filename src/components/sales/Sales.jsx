@@ -1,10 +1,15 @@
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
 import React, { useState, useEffect } from "react";
 
 const Sales = () => {
 
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
 
   const handleChangeImage = (index) => {
-
     const images = ['slide-1.jpg', 'services.jpg', 'Group28.jpg']
     const img = document.querySelector('.hero-image-bg')
     const classNames = document.querySelectorAll('.link-item')
@@ -19,7 +24,6 @@ const Sales = () => {
     img.src = '/images/' + images[index]
 
     setTimeout(() => {
-      
       img.classList.remove('fade-in')
     }, 1000);
   }
@@ -35,46 +39,36 @@ const Sales = () => {
               className="col-lg-5 p-0 left justify-content-center"
             >
               <img src="/images/shape1.svg" className="shape" alt="" />
-              <h3>Increase big scale instagram more</h3>
+              <h3>{t.Increase}</h3>
               <p>
-                More increase product sales, customer engage, generate qualified
-                leads, and deliver instant support through doing personalized.
+               {t.MoreIncreas}
               </p>
               <a href="/chatbot#instagram" className="btn-sub-text">
-                <span>Explore</span>{" "}
+                <span>{t.explore}</span>{" "}
                 <img src="/images/btn-arrow-right.svg" alt="" />
               </a>
               <div className="links">
                 <a className="link-item" onClick={() => handleChangeImage(0)} data-image="0" href="javascript:void(0);">
                   <img src="/images/messenger.png" alt="" />{" "}
-                  <span>Get more customers</span>
+                  <span>{t.GetMoreCustomers}</span>
                   <div className="drop-text-area">
-                    Lorem ipsum dolar sit amet
-                    Lorem ipsum dolar sit amet
-                    Lorem ipsum dolar sit amet
-                    Lorem ipsum dolar sit amet
+                      {t.GetMoreCustomersText}
                   </div>
                 </a>
                 
                 <a className="link-item" onClick={() => handleChangeImage(1)} data-image="1" href="javascript:void(0);">
                   <img src="/images/twitter3,.svg" alt="" />{" "}
-                  <span>Drive your sales</span>
+                  <span> {t.drive}</span>
                   <div className="drop-text-area">
-                    Lorem ipsum dolar sit amet
-                    Lorem ipsum dolar sit amet
-                    Lorem ipsum dolar sit amet
-                    Lorem ipsum dolar sit amet
+                    {t.driveTxt}
                   </div>
                 </a>
                 
                 <a className="link-item" onClick={() => handleChangeImage(2)} data-image="2" href="javascript:void(0);">
                   <img src="/images/whatsapp3.svg" alt="" />{" "}
-                  <span>Daily automation</span>
+                  <span>{t.increaseEfficiency}</span>
                   <div className="drop-text-area">
-                      Lorem ipsum dolar sit amet
-                      Lorem ipsum dolar sit amet
-                      Lorem ipsum dolar sit amet
-                      Lorem ipsum dolar sit amet
+                      {t.increaseEfficiencyTxt}
                   </div>
                 </a>
                 

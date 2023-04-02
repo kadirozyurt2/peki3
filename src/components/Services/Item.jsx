@@ -1,6 +1,12 @@
-import React from "react";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
+import React, { useState, useEffect } from "react";
 
 const Item = () => {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
   return (
     <>
       <div className="row d-flex justify-content-center item">
@@ -9,15 +15,13 @@ const Item = () => {
           data-aos-duration="1400"
           className="col-lg-4 left"
         >
-          <h2>RECOMMENDATION ENGINES</h2>
-          <h3>Think big scale to our big engine</h3>
+          <h2>{t.recomda}</h2>
+          <h3>{t.Thinkbig} </h3>
           <p>
-            Increase product sales, customer more engage, generate qualified
-            leads, and deliver instant support through personalized. Easily
-            build and automate interactive conversations.
+             {t.ThinkbigTxt}
           </p>
           <a href="/reccomendations" className="btn-sub-text">
-            <span>Learn more</span> <img src="/images/btn-arrow-right.svg" />
+            <span>{t.Learnmore} </span> <img src="/images/btn-arrow-right.svg" />
           </a>
         </div>
         <div data-aos="fade-left" data-aos-duration="1400" className="col-lg-6">
@@ -26,38 +30,18 @@ const Item = () => {
       </div>
       <div className="row d-flex justify-content-center item">
         <div className="col-lg-4 left">
-          <h2>RECOMMENDATION ENGINES</h2>
-          <h3>Think big scale to our big engine</h3>
+          <h2>{t.recomda}</h2>
+          <h3>{t.startlearning}</h3> 
           <p>
-            Increase product sales, customer more engage, generate qualified
-            leads, and deliver instant support through personalized. Easily
-            build and automate interactive conversations.
+           {t.startLearningTxt}
           </p>
           <a href="/reccomendations" className="btn-sub-text">
-            <span>Learn more</span>{" "}
+            <span>{t.Learnmore}</span>{" "}
             <img src="/images/btn-arrow-right.svg" alt="" />
           </a>
         </div>
         <div className="col-lg-6">
           <img src="/images/Group28.jpg" alt="" />
-        </div>
-      </div>
-      <div className="row d-flex justify-content-center item">
-        <div className="col-lg-4 left">
-          <h2>RECOMMENDATION ENGINES</h2>
-          <h3>Think big scale to our big engine</h3>
-          <p>
-            Increase product sales, customer more engage, generate qualified
-            leads, and deliver instant support through personalized. Easily
-            build and automate interactive conversations.
-          </p>
-          <a href="/reccomendations" className="btn-sub-text">
-            <span>Learn more</span>{" "}
-            <img src="/images/btn-arrow-right.svg" alt="" />
-          </a>
-        </div>
-        <div className="col-lg-6">
-          <img src="/images/Group29.jpg" alt="" />
         </div>
       </div>
     </>

@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "@/components/chatbot/Header";
 import Card from "@/components/chatbot/Card";
 import Marquee from "@/components/marquee_slider/Marquee";
@@ -6,11 +5,20 @@ import { Swiper, SwiperSlide, SwiperProps } from "swiper/react";
 import SwiperCore, { Pagination } from "swiper/core";
 import "swiper/css";
 import "swiper/css/navigation";
+import Link from "next/link";
 import "swiper/css/pagination";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
+import React, { useState, useEffect } from "react";
 
 SwiperCore.use([Pagination]);
 
 const Chatbot = () => {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
+  
   const SwiperProps = {
     spaceBetween: 20,
   };
@@ -78,7 +86,7 @@ const Chatbot = () => {
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
-            Get Started <small>~ It’s Free</small>
+            {t.getStarted} <small>~  {t.itsFree}</small>
           </span>
         </a>
 
@@ -140,16 +148,13 @@ const Chatbot = () => {
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
-            Get Started <small>~ It’s Free</small>
+            {t.getStarted} <small>~  {t.itsFree}</small>
           </span>
         </a>
 
         <h5 className="mt-5 pt-5" id="whatsapp">
-          Chatbot <span>for</span> Whatsapp{" "}
+          {t.ChatbotFor}
         </h5>
-        <p className="text-center mb-5">
-          We help you to build good relationships with your customers
-        </p>
 
         <section className="box-two-area">
           <div className="container-fluid">
@@ -161,26 +166,27 @@ const Chatbot = () => {
                   src="/images/whatsapp3.svg"
                   className="shape w-auto"
                 />
-                <h3>Connect with your Customers Stage</h3>
+                <h3> {t.ConnectWhatsap}</h3>
                 <div className="col-md-12">
                   <Swiper pagination={{ clickable: true }} {...SwiperProps}>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          Automatically respond to comments on your Whatsapp
-                          posts with the Comments Growth Tool. Answer common
-                          questions, offer product recos, initiate newsletter
-                          sign-ups, and more.
+                        {t.ConnectWhatsapp1}
                         </p>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          Automatically respond to comments on your Whatsapp
-                          posts with the Comments Growth Tool. Answer common
-                          questions, offer product recos, initiate newsletter
-                          sign-ups, and more.
+                        {t.ConnectWhatsapp2}
+                        </p>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="col-md-12">
+                        <p>
+                        {t.ConnectWhatsapp3}
                         </p>
                       </div>
                     </SwiperSlide>
@@ -199,12 +205,49 @@ const Chatbot = () => {
           </div>
         </section>
 
-        <Card />
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="boxs-info-area"
+      >
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
+          {t.MorefeaturesWhatsapp}
+        </h5>
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                  <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.dahayuksek}</h6>
+                  <p>{t.whatsapEntegrasyonu}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.kisisel}</h6>
+                  <p>{t.kisiselTxt}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.dahafazlasatis}</h6>
+                  <p>{t.dahafazlasatisTxt}</p>
+                </Link>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
         <Marquee />
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
-            Get Started <small>~ It’s Free</small>
+            {t.getStarted} <small>~  {t.itsFree}</small>
           </span>
         </a>
 
@@ -268,7 +311,7 @@ const Chatbot = () => {
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
-            Get Started <small>~ It’s Free</small>
+            {t.getStarted} <small>~  {t.itsFree}</small>
           </span>
         </a>
 
@@ -282,7 +325,7 @@ const Chatbot = () => {
                   </h6>
                   <p>Build your chatbot for customers right now</p>
                   <a href="#">
-                    <span>Get Started</span> <small>~ It’s Free</small>
+                    <span>{t.getStarted}</span> <small>~  {t.itsFree}</small>
                   </a>
                 </div>
               </div>
