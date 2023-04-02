@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="136" height="136" viewBox="0 0 136 136">
+  <defs>
+    <filter id="bg" x="0" y="0" width="136" height="136" filterUnits="userSpaceOnUse">
+      <feOffset dy="12" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feFlood flood-opacity="0.078"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_12" data-name="Group 12" transform="translate(24 12)">
+    <g id="logo">
+      <g transform="matrix(1, 0, 0, 1, -24, -12)" filter="url(#bg)">
+        <rect id="bg-2" data-name="bg" width="88" height="88" rx="44" transform="translate(24 12)" fill="#fff"/>
+      </g>
+      <g id="Group" transform="translate(14.667 14.667)">
+        <path id="Path" d="M0,0H58.667V58.667H0Z" fill="none"/>
+        <path id="Shape" d="M14.369,48.742a18.074,18.074,0,0,1-5.936-1.137A11.936,11.936,0,0,1,4.1,44.787a11.975,11.975,0,0,1-2.819-4.331A17.994,17.994,0,0,1,.147,34.52C.032,31.915,0,31.086,0,24.444s.024-7.47.147-10.075A17.994,17.994,0,0,1,1.283,8.433,11.936,11.936,0,0,1,4.1,4.1,11.967,11.967,0,0,1,8.433,1.283,17.994,17.994,0,0,1,14.369.147C16.974.032,17.8,0,24.444,0S31.915.024,34.52.147a18,18,0,0,1,5.936,1.137A11.914,11.914,0,0,1,44.787,4.1a11.986,11.986,0,0,1,2.819,4.331,18.059,18.059,0,0,1,1.137,5.936c.115,2.606.147,3.434.147,10.075s-.024,7.471-.147,10.076a18.074,18.074,0,0,1-1.137,5.936,12.487,12.487,0,0,1-7.15,7.15,18.064,18.064,0,0,1-5.936,1.137c-2.606.115-3.434.147-10.076.147S16.974,48.865,14.369,48.742Z" transform="translate(4.889 4.889)" fill="#100f0f"/>
+      </g>
+    </g>
+  </g>
+</svg>

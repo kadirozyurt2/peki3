@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_1" data-name="Group 1" transform="translate(-24 -24)">
+    <g id="Group" transform="translate(24 24)">
+      <path id="Path" d="M0,0H32V32H0Z" fill="none"/>
+      <path id="Shape" d="M0,24.533V0H2.623V21.807H23.606v2.726Zm5.63-10.5,7.484-7.779,3.934,4.088,5.63-5.85,1.854,1.927-7.484,7.779-3.934-4.088-5.63,5.85Z" transform="translate(4.267 3.2)" fill="#100f0f"/>
+    </g>
+  </g>
+</svg>
