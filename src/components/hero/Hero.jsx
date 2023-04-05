@@ -20,8 +20,6 @@ const Hero = () => {
               </h1>
               <p data-aos="fade-up" data-aos-duration="1400">
                 {t.automate}
-                Automate interactive conversations in Instagram Messages,
-                Facebook Messenger, Whatsapp and Twitter to grow your brand.
               </p>
               <a href="#" className="sub-btn">
                 <span>

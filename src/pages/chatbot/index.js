@@ -2,7 +2,7 @@ import Header from "@/components/chatbot/Header";
 import Card from "@/components/chatbot/Card";
 import Marquee from "@/components/marquee_slider/Marquee";
 import { Swiper, SwiperSlide, SwiperProps } from "swiper/react";
-import SwiperCore, { Pagination } from "swiper/core";
+import SwiperCore, { Pagination,Parallax,Autoplay } from "swiper/core";
 import "swiper/css";
 import "swiper/css/navigation";
 import Link from "next/link";
@@ -12,7 +12,7 @@ import en from "locales/en";
 import tr from "locales/tr";
 import React, { useState, useEffect } from "react";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use( [Autoplay, Parallax, Pagination]);
 
 const Chatbot = () => {
   const router = useRouter();
@@ -22,17 +22,44 @@ const Chatbot = () => {
   const SwiperProps = {
     spaceBetween: 20,
   };
+
+  const SwiperProps2 = {
+    speed: 3000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+      pauseOnMouseEnter: true,
+    },
+    loop: true,
+    watchSlidesProgress: true,
+    spaceBetween: 20,
+    breakpoints: {
+      // when window width is <= 499px
+      499: {
+          slidesPerView: 1,
+          spaceBetweenSlides: 30
+      },
+      // when window width is <= 999px
+      999: {
+          slidesPerView: 3,
+          spaceBetweenSlides: 40
+      }
+  },
+    grabCursor: true,
+  };
+
+  
   return (
     <>
       <Header />
 
       <div className="chatbot-wrapper">
         <h5 className="mt-5 pt-5" id="instagram">
-          Chatbot <span>for</span> Instagram{" "}
+         {t.ChatbotForInstagram} 
         </h5>
-        <p className="text-center mb-5">
+        {/* <p className="text-center mb-5">
           We help you to build good relationships with your customers
-        </p>
+        </p> */}
 
         <section className="chatbot-twitter-swiper box-two-area">
           <div className="container-fluid">
@@ -44,24 +71,27 @@ const Chatbot = () => {
                   src="/images/shape1.svg"
                   className="shape w-auto"
                 />
-                <h3>Increase big scale instagram more</h3>
+                <h3> {t.IncreaseInstagram}</h3>
                 <div className="col-md-12">
                   <Swiper pagination={{ clickable: true }} {...SwiperProps}>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          More increase product sales, customer engage, generate
-                          qualified leads, and deliver instant support through
-                          doing personalized.
+                        {t.IncreaseInstagram1}
                         </p>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          More increase product sales, customer engage, generate
-                          qualified leads, and deliver instant support through
-                          doing personalized.
+                        {t.IncreaseInstagram2}
+                        </p>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="col-md-12">
+                        <p>
+                        {t.IncreaseInstagram3}
                         </p>
                       </div>
                     </SwiperSlide>
@@ -81,8 +111,100 @@ const Chatbot = () => {
         </section>
 
 
-        <Card />
-        <Marquee />
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="boxs-info-area"
+      >
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
+          {t.MorefeaturesInstagram}
+        </h5>
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                  <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.InstagramTitle1}</h6>
+                  <p>{t.InstagramTxt1}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.InstagramTitle2}</h6>
+                  <p>{t.InstagramTxt2}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.SwiperCore}</h6>
+                  <p>{t.InstagramTxt3}</p>
+                </Link>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <section
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="marquee-slide-wrapper"
+      >
+        <div className="marquee-slider">
+         
+      <Swiper {...SwiperProps2}>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.InstagramMarquee1}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.InstagramMarquee2}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.InstagramMarquee3}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.InstagramMarquee4}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.InstagramMarquee5}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+        </div>
+      </section>
+
+
+
+
+        {/* <Marquee /> */}
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
@@ -91,11 +213,11 @@ const Chatbot = () => {
         </a>
 
         <h5 className="mt-5 pt-5" id="messenger">
-          Chatbot <span>for</span> Messenger{" "}
+          {t.ChatbotForMessenger}
         </h5>
-        <p className="text-center mb-5">
+        {/* <p className="text-center mb-5">
           We help you to build good relationships with your customers
-        </p>
+        </p> */}
 
         <section className="box-two-area">
           <div className="container-fluid">
@@ -107,24 +229,20 @@ const Chatbot = () => {
                   src="/images/messenger.png"
                   className="shape w-auto"
                 />
-                <h3>Your Customers are on Messenger</h3>
+                <h3>  {t.MessengerT} </h3>
                 <div className="col-md-12">
                   <Swiper pagination={{ clickable: true }} {...SwiperProps}>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          Peki is the #1 Facebook Messenger chatbot that
-                          automates getting and keeping customers happy, so you
-                          have more time for everything else.
+                        {t.MessengerTitle1}
                         </p>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          Peki is the #1 Facebook Messenger chatbot that
-                          automates getting and keeping customers happy, so you
-                          have more time for everything else.
+                        {t.MessengerTitle2}
                         </p>
                       </div>
                     </SwiperSlide>
@@ -143,8 +261,97 @@ const Chatbot = () => {
           </div>
         </section>
 
-        <Card />
-        <Marquee />
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="boxs-info-area"
+      >
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
+          {t.MorefeaturesMessenger}
+        </h5>
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                  <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.MessenTitle1}</h6>
+                  <p>{t.MessenTxt1}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.MessenTitle2}</h6>
+                  <p>{t.MessenTxt2}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.MessenTitle3}</h6>
+                  <p>{t.MessenTxt3}</p>
+                </Link>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <section
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="marquee-slide-wrapper"
+      >
+        <div className="marquee-slider">
+         
+      <Swiper {...SwiperProps2}>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.MessengerMarquee1}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.MessengerMarquee2}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.MessengerMarquee3}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.MessengerMarquee4}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.MessengerMarquee5}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+        </div>
+      </section>
+
+        
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
