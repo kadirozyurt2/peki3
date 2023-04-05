@@ -44,7 +44,7 @@ export default {
     heroTitle: 'Bring your products to life',
     with: 'with',
     heroDescription: 'Automate interactive conversations in Instagram Messages, Facebook Messenger, Whatsapp and Twitter to grow your brand.',
-    itsFree: "It's Free",
+    itsFree: "Ücretsiz",
     MorefeaturesWhatsapp: "Whatsapp için daha fazla özellik",
     dahayuksek: "Daha Yüksek Müşteri Erişimi",
     whatsapEntegrasyonu: "WhatsApp entegrasyonu, müşterilerinizin daha fazla erişim sağlamasına yardımcı olabilir. Bu, müşterilerinize daha iyi hizmet vermenize ve daha fazla müşteri kazanmanıza olanak tanır.",
