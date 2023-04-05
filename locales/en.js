@@ -89,7 +89,7 @@ export default {
     sssTitle2: "What can automation do for my business?",
     ss1: "Facebook Messenger automation is a tool that allows businesses to automate their customer service and engagement on the Facebook Messenger platform. With Messenger automation, businesses can use chatbots or other automated systems to respond to customer inquiries, provide information about products or services, and even complete transactions directly within the Messenger app. Messenger automation can help businesses save time and resources, while also improving customer satisfaction and engagement.",
     ss2: "The chatbot allows you to welcome new users, send them content, schedule messages, respond to specific keywords and much more.",
-    aaa: "aaaa",
+    sssTitle: "Frequently asked questions ",
     aaa: "aaaa",
     aaa: "aaaa",
     aaa: "aaaa",
