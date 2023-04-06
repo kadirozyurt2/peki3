@@ -106,7 +106,7 @@ export default {
     TwitterMarquee2: "Cost Savings",
     TwitterMarquee3: "More Sales",
     TwitterMarquee4: "24/7 Availability",
-    TwitterMarquee5: "Increased Customer Reach",
+    TwitterMarquee5: "Increased Customer Reachgit init",
     aaa: "aaaa",
     aaa: "aaaa",
     aaa: "aaaa",
