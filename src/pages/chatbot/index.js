@@ -459,11 +459,8 @@ const Chatbot = () => {
         </a>
 
         <h5 className="mt-5 pt-5" id="twitter">
-          Chatbot <span>for</span> Twitter
+          {t.ChatbotForTwitter}
         </h5>
-        <p className="text-center mb-5">
-          We help you to build good relationships with your customers
-        </p>
 
         <section className="box-two-area">
           <div className="container-fluid">
@@ -475,26 +472,27 @@ const Chatbot = () => {
                   src="/images/twit.svg"
                   className="shape w-auto"
                 />
-                <h3>Direct Customers to Your Twitter</h3>
+                <h3> {t.TwiiterT}</h3>
                 <div className="col-md-12">
                   <Swiper pagination={{ clickable: true }} {...SwiperProps}>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          Use Peki URL Growth Tool to create a messenger link
-                          for your chatbot that customers can access from their
-                          preferred channel. Website. Email. Text message.
-                          Anywhere.
+                        {t.TwiiterSlide1}
                         </p>
                       </div>
                     </SwiperSlide>
                     <SwiperSlide>
                       <div className="col-md-12">
                         <p>
-                          Use Peki URL Growth Tool to create a messenger link
-                          for your chatbot that customers can access from their
-                          preferred channel. Website. Email. Text message.
-                          Anywhere.
+                        {t.TwiiterSlide2}
+                        </p>
+                      </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                      <div className="col-md-12">
+                        <p>
+                        {t.TwiiterSlide3}
                         </p>
                       </div>
                     </SwiperSlide>
@@ -513,8 +511,100 @@ const Chatbot = () => {
           </div>
         </section>
 
-        <Card />
-        <Marquee />
+        
+        <div
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="boxs-info-area"
+      >
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
+          {t.MorefeaturesTwit}
+        </h5>
+        <div className="container">
+          <div className="row justify-content-between">
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                  <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.twitTitle1}</h6>
+                  <p>{t.twitText1}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.twitTitle2}</h6>
+                  <p>{t.twitText2}</p>
+                </Link>
+            </div>
+
+            <div className="col-lg-4 item">
+                <Link href={'javascript:;'}>
+                <img src="/images/Increase.svg" alt="" />
+                  <h6>{t.twitTitle3}</h6>
+                  <p>{t.twitText3}</p>
+                </Link>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+        
+      <section
+        data-aos="fade-down"
+        data-aos-duration="1400"
+        className="marquee-slide-wrapper"
+      >
+        <div className="marquee-slider">
+         
+      <Swiper {...SwiperProps2}>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.TwitterMarquee1}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.TwitterMarquee2}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.TwitterMarquee3}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.TwitterMarquee4}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/icon1.svg" alt="" />{" "}
+              <span>{t.TwitterMarquee5}</span>
+            </a>
+          </div>
+        </SwiperSlide>
+      </Swiper>
+        </div>
+      </section>
+
+
 
         <a href="#" className="sub-btn mt-5 mb-5">
           <span>
