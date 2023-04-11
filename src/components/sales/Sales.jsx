@@ -18,7 +18,7 @@ const Sales = () => {
     elements.forEach((element) => {
       element.classList.remove('activeItem');
     });
-    if(elements.classList.contains('activeItem')){
+    if(elements.matches('.activeItem')){
       elements.forEach((element) => {
         element.classList.remove('activeItem');
       });
