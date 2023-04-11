@@ -18,11 +18,11 @@ const Sales = () => {
     elements.forEach((element) => {
       element.classList.remove('activeItem');
     });
-    // if(elements.matches('.activeItem')){
-    //   elements.forEach((element) => {
-    //     element.classList.remove('activeItem');
-    //   });
-    // }
+    if(elements.classList.contains('activeItem')){
+      elements.forEach((element) => {
+        element.classList.remove('activeItem');
+      });
+    }
     classNames[index].classList.toggle('activeItem')
     img.classList.toggle('fade-in')
     img.src = '/images/' + images[index]

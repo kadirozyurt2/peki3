@@ -1,19 +1,26 @@
-import React from "react";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
+import React, { useState, useEffect } from "react";
 
 const Premium = () => {
+
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
+
   return (
     <>
       <div className="col-lg-4 item premium">
         <h3>Premium</h3>
         <p className="text">
-          Eaquesa quae ab illo inven tore dolor sit amet veritatis more legi
-          mano vet.
+          {t.premiumTop}
         </p>
-        <div className="price-not">Let’s talk about your plan!</div>
+        <div className="price-not">{t.lets}</div>
         <a href="#">
-          <span>Contact Us</span>
+          <span>{t.Contact} </span>
         </a>
-        <h4>All Pro features, plus</h4>
+        <h4>{t.AllPro}</h4>
         <ul>
           <li>
             <svg
@@ -57,7 +64,7 @@ const Premium = () => {
                 />
               </g>
             </svg>
-            <span>Limitsiz bağlanabilir kanal</span>
+            <span>{t.premium1}</span>
           </li>
           <li>
             <svg
@@ -79,7 +86,7 @@ const Premium = () => {
                 />
               </g>
             </svg>
-            <span>Limitsiz aylık kullanıcı</span>
+            <span>{t.premium2}</span>
           </li>
           <li>
             <svg
@@ -101,7 +108,7 @@ const Premium = () => {
                 />
               </g>
             </svg>
-            <span>Limitsiz canlı destek uzmanı</span>
+            <span>{t.premium3}</span>
           </li>
           <li>
             <svg
@@ -123,7 +130,7 @@ const Premium = () => {
                 />
               </g>
             </svg>
-            <span>Kendi markanız ile</span>
+            <span>{t.premium4}</span>
           </li>
           <li>
             <svg
@@ -145,7 +152,7 @@ const Premium = () => {
                 />
               </g>
             </svg>
-            <span>Limitsiz Spellcheck</span>
+            <span>{t.premium5}</span>
           </li>
         </ul>
       </div>

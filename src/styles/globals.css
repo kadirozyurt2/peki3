@@ -85,7 +85,7 @@ a{
 }
 .bottom-page-head .text p{
     font-size:22px;
-    font-weight: normal;
+    font-weight: normal; text-align:center;
 }
 .lang{
     position: relative;

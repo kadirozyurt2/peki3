@@ -1,14 +1,21 @@
-import React from "react";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
+import React, { useState, useEffect } from "react";
 
 const Pro = () => {
+
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
+
   return (
     <>
       <div className="col-lg-4 item pro">
-        <span className="top-text-populer">POPULAR</span>
+        <span className="top-text-populer">{t.popular}</span>
         <h3>Pro</h3>
         <p className="text">
-          Eaquesa quae ab illo inven tore dolor sit amet veritatis more legi
-          mano vet.
+           {t.proTop}
         </p>
         <div className="price">
           <b>200</b>
@@ -16,11 +23,11 @@ const Pro = () => {
           <small>/ mo</small>
         </div>
         <a href="#">
-          <span>Get Started</span>
+          <span>{t.getStarted}</span>
         </a>
-        <h4>All Free features, plus</h4>
+        <h4>{t.proTxt1}</h4>
         <ul>
-          <li>
+          <li> 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={14}
@@ -62,7 +69,7 @@ const Pro = () => {
                 />
               </g>
             </svg>
-            <span>2 adet bağlanabilir kanal</span>
+            <span>Web bot</span>
           </li>
           <li>
             <svg
@@ -84,7 +91,7 @@ const Pro = () => {
                 />
               </g>
             </svg>
-            <span>50 - 20.000 aylık kullanıcı</span>
+            <span>{t.aylik500}</span>
           </li>
           <li>
             <svg
@@ -106,7 +113,7 @@ const Pro = () => {
                 />
               </g>
             </svg>
-            <span>1 adet canlı destek uzmanı</span>
+            <span>{t.liveAgent}</span>
           </li>
         </ul>
       </div>

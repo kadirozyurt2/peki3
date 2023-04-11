@@ -3,13 +3,11 @@ import en from "locales/en";
 import tr from "locales/tr";
 import React, { useState, useEffect } from "react";
 
-
 const Free = () => {
-
   const router = useRouter();
   const { locale, locales, defaultLocale } = router;
   const t = locale === "en" ? en : tr;
-
+ 
   return (
     <>
       <div className="col-lg-4 item free">
@@ -25,7 +23,7 @@ const Free = () => {
         <a href="#">
           <span>{t.getStarted}</span>
         </a>
-        <h4>Free includes</h4>
+        <h4>{t.freeInc}</h4>
         <ul>
           <li>
             <svg
@@ -69,7 +67,7 @@ const Free = () => {
                 />
               </g>
             </svg>
-            <span>1 adet bağlanabilir kanal</span>
+            <span>{t.webBot}</span>
           </li>
           <li>
             <svg
@@ -91,7 +89,7 @@ const Free = () => {
                 />
               </g>
             </svg>
-            <span>49 aylık kullanıcı</span>
+            <span>{t.kullanici49}</span>
           </li>
         </ul>
       </div>
