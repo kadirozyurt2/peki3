@@ -16,9 +16,7 @@ const Pricing = () => {
 
   return (
     <>
-      <InnerPageHeader title={`${t.SelectYour}`} description={`${t.connectYour}`}
-        
-      />
+      <InnerPageHeader title={`${t.SelectYour}`} description={`${t.connectYour}`} />
       <section className="your-plan">
         <div className="container-fluid">
           <div
