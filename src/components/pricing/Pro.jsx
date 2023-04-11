@@ -18,7 +18,7 @@ const Pro = () => {
            {t.proTop}
         </p>
         <div className="price">
-          <b>200</b>
+          <b>999</b>
           <span>TRY</span>
           <small>/ mo</small>
         </div>
