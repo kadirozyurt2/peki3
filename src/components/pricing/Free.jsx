@@ -1,4 +1,8 @@
-import React from "react";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
+import React, { useState, useEffect } from "react";
+
 
 const Free = () => {
 
