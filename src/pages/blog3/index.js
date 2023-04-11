@@ -19,9 +19,9 @@ const BlogDetail = () => {
           <div className="container-fluid p-0">
             <div className="row">
               <div className="col-lg-8 center-area m-auto">
-                <h1>Öneri Motorları Nedir?</h1>
+                <h1>Duygu Analizi Motorları Nedir?</h1>
                 <p>
-                  Öneri motorları, kullanıcılara ilgi alanlarına göre öneriler sunan bir yazılım teknolojisidir. İnternet üzerinde birçok platformda kullanılırlar. Örneğin, bir e-ticaret sitesi, kullanıcılara ilgili ürünler önerirken, bir müzik uygulaması, dinleme alışkanlıklarına göre şarkılar önerir. Öneri motorları, kullanıcılara özelleştirilmiş bir deneyim sunar ve satın alma oranlarını artırabilir
+                Duygu analizi motorları, metin, görüntü veya ses gibi verileri analiz ederek, bu verilerde yer alan duygusal ifadeleri tespit etmeye yarayan bir yazılım teknolojisidir. Bu teknoloji, insanların duygusal durumlarını anlamak ve anlamlandırmak için kullanılır. Duygu analizi motorları, algoritma ve yapay zeka teknolojileri kullanarak çalışır.
                 </p>
                 <div className="info-area">
                   <div className="subject">INSTAGRAM</div>
@@ -40,34 +40,37 @@ const BlogDetail = () => {
                 </div>
                 <h2>Nasıl Çalışırlar?</h2>
                 <p>
-                  Öneri motorları, algoritma ve yapay zeka teknolojileri kullanarak çalışır. Bu teknolojiler, kullanıcılardan toplanan verileri analiz ederek, kullanıcıların ilgi alanlarını ve satın alma davranışlarını anlarlar. Bu veriler, kullanıcılar için ilgili öneriler sunmak için kullanılır. Öneri motorları, genellikle iki tür veri kullanır: kullanıcı davranış verileri ve ürün verileri.
-                  Kullanıcı davranış verileri, kullanıcının etkileşimlerinden toplanır. Örneğin, bir e-ticaret sitesinde bir kullanıcının tıkladığı ürünler, beğendiği ürünler ve satın aldığı ürünler, kullanıcının ilgi alanlarını belirlemek için kullanılır. Ürün verileri, ürün özellikleri, kategori ve stok durumu gibi ürünle ilgili bilgileri içerir.
+                Duygu analizi motorları, verileri analiz ederek, bu verilerdeki duygusal ifadeleri tespit eder. Bu analiz, genellikle üç aşamada gerçekleştirilir:
+<br/><br/>
+Veri Ön İşleme: Veriler, temizlenir ve belirli bir formata dönüştürülür. Bu adım, doğru sonuçlar elde etmek için çok önemlidir.
+<br/><br/>
+
+<b>Duygu Tanıma</b>: Duygu analizi motorları, verilerdeki kelimeleri veya ifadeleri tespit eder ve bunları olumlu, olumsuz veya nötr olarak sınıflandırır.
+<br/><br/>
+
+<b>Sonuçların Sunumu</b>: Sonuçlar, raporlar veya grafikler gibi birçok farklı formatta sunulabilir. Bu sonuçlar, insanların duygusal durumları hakkında fikir sahibi olmalarına yardımcı olabilir.
+
                 </p>
-
-
 
                 <h2>İşletmeler Nasıl Yararlanırlar?</h2>
                 <p>
-                Öneri motorları, işletmelerin müşteri deneyimini geliştirmelerine yardımcı olur. İşletmeler, öneri motorlarını kullanarak müşterilerin ilgi alanlarına göre özelleştirilmiş bir deneyim sunarlar. Bu, müşteri sadakatini artırabilir ve satın alma oranlarını artırabilir. İşletmeler ayrıca, öneri motorlarından toplanan verileri analiz ederek, müşterilerin davranışlarını ve ihtiyaçlarını anlayabilirler. Bu veriler, pazarlama stratejilerini optimize etmelerine yardımcı olabilir.
+                  Duygu analizi motorları, işletmelerin müşteri deneyimini geliştirmesine yardımcı olur. İşletmeler, duygu analizi motorlarını kullanarak müşteri geri bildirimlerini analiz edebilirler. Bu geri bildirimler, müşterilerin ürün veya hizmetlerle ilgili düşüncelerini ve duygusal durumlarını yansıtır. İşletmeler bu geri bildirimleri analiz ederek, müşteri memnuniyetini artırabilirler.
+                  <br/><br/>
+                  Duygu analizi motorları ayrıca, sosyal medya platformlarındaki paylaşımları veya müşteri yorumlarını analiz etmek için de kullanılabilir. Bu, işletmelerin müşterilerinin duygusal durumlarını anlamalarına ve pazarlama stratejilerini optimize etmelerine yardımcı olabilir.
                 </p>
 
-
-
-                <h2>Öneri Motorları Örnekleri</h2>
+                <h2>Duygu Analizi Motorları Örnekleri</h2>
                 <p>
-                Öneri motorları, birçok platformda kullanılır. İşte bazı örnekler:
-Netflix: Netflix, kullanıcıların ilgi alanlarına göre öneriler sunarak, izleme deneyimini kişiselleştirir.
-Amazon: Amazon, kullanıcılara ilgili ürünler önererek, müşteri deneyimini geliştirir.
-Spotify: Spotify, kullan ıcıların dinleme alışkanlıklarına göre müzik önerileri sunar ve kullanıcıların yeni sanatçılar ve şarkılar keşfetmelerine yardımcı olur.
-YouTube: YouTube, kullanıcıların izleme geçmişine ve tercihlerine göre video önerileri sunar.
-LinkedIn: LinkedIn, kullanıcıların ilgi alanlarına göre iş ilanları önerir.
-Etsy: Etsy, kullanıcıların tarzlarına ve alışveriş geçmişlerine göre el yapımı ürünler önerir.
-
+                  Duygu analizi motorları, birçok platformda kullanılır. İşte bazı örnekler:
+                  IBM Watson: IBM Watson, metin analizi, görüntü analizi ve ses analizi gibi farklı modüller içeren kapsamlı bir duygu analizi platform Google Cloud Natural Language API: Google Cloud Natural Language API, doğal dil işleme özelliklerinin yanı sıra duygu analizi sağlar.
+                  Amazon Comprehend: Amazon Comprehend, metin verilerini analiz eder ve duygu analizi, anahtar kelime çıkarma, dil algılama gibi özellikleri sunar.
+                  <br/><br/>
+                  Microsoft Azure Cognitive Services: Microsoft Azure Cognitive Services, duygu analizi ve diğer yapay zeka özelliklerini içeren bir dizi hizmet sunar.
                 </p>
 
                 <h2>Sonuç</h2>
                 <p>
-                Öneri motorları, kullanıcılara özelleştirilmiş bir deneyim sunan ve işletmelerin müşteri deneyimini geliştirmesine yardımcı olan bir yazılım teknolojisidir. İşletmeler, öneri motorlarını kullanarak, müşterilerin ilgi alanlarını anlayabilir, pazarlama stratejilerini optimize edebilir ve satın alma oranlarını artırabilirler. Öneri motorları, internet platformlarında yaygın olarak kullanılmaktadır ve kullanıcılara daha iyi bir deneyim sunmak için sürekli olarak geliştirilmektedir.
+                  Duygu analizi motorları, insanların duygusal durumlarını anlamak ve anlamlandırmak için kullanılan bir yazılım teknolojisidir. İşletmeler, duygu analizi motorlarını kullanarak müşteri geri bildirimlerini analiz edebilirler. Bu geri bildirimler, müşterilerin ürün veya hizmetlerle ilgili düşüncelerini ve duygusal durumlarını yansıtır. İşletmeler bu geri bildirimleri analiz ederek, müşteri memnuniyetini artırabilirler. Duygu analizi motorları, birçok platformda kullanılır ve sürekli olarak geliştirilmektedir.
                 </p>
 
               </div>

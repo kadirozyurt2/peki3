@@ -21,35 +21,34 @@ const Blog = (props) => {
                 </span>
                 <span className="text">
                   <span className="date">04 March 2022</span>
-                  <p>How to monetize a blog and make money online</p>
+                  <p>Öneri Motorları Nedir?</p>
                 </span>
               </Link>
             </div>
 
             <div className="col-lg-4 item">
-            <Link href={"/blog1"}>
+            <Link href={"/blog2"}>
                 <span className="img">
                   <img src="/images/blog.jpg" alt="" />
                 </span>
                 <span className="text">
                   <span className="date">04 March 2022</span>
-                  <p>How to monetize a blog and make money online</p>
+                  <p>Chatbot Kullanmanın Yararları</p>
                 </span>
               </Link>
             </div>
 
             <div className="col-lg-4 item">
-            <Link href={"/blog1"}>
+            <Link href={"/blog3"}>
                 <span className="img">
                   <img src="/images/blog.jpg" alt="" />
                 </span>
                 <span className="text">
                   <span className="date">04 March 2022</span>
-                  <p>How to monetize a blog and make money online</p>
+                  <p>Duygu Analizi Motorları Nedir?</p>
                 </span>
               </Link>
             </div>
-
 
 
            {/* <Item  />
