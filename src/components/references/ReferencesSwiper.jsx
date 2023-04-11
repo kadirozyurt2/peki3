@@ -147,7 +147,7 @@ const ReferencesSwiper = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/mobiliz.jpeg" alt="" />{" "}
+              <img src="/images/mobiliz.png" alt="" />{" "}
             </a>
           </div>
         </SwiperSlide>
