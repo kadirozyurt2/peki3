@@ -6,9 +6,8 @@ import Premium from "@/components/pricing/Premium";
 const Pricing = () => {
   return (
     <>
-      <InnerPageHeader
-        title="Select your plan"
-        description="Connect your Peki account to your favorite tools"
+      <InnerPageHeader title={`${t.SelectYour}`} description={`${t.SelectYour}`}
+        
       />
       <section className="your-plan">
         <div className="container-fluid">
