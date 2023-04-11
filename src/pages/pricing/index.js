@@ -13,10 +13,10 @@ const Pricing = () => {
   const router = useRouter();
   const { locale, locales, defaultLocale } = router;
   const t = locale === "en" ? en : tr;
-  
+
   return (
     <>
-      <InnerPageHeader title={`${t.SelectYour}`} description={`${t.SelectYour}`}
+      <InnerPageHeader title={`${t.SelectYour}`} description={`${t.connectYour}`}
         
       />
       <section className="your-plan">
