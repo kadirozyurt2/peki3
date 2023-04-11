@@ -16,7 +16,7 @@ a, a img{
    outline:none;
    border:none;
 }
-p{ text-align: justify;}
+
 a:hover{
     text-decoration: none !important;
 }
@@ -1880,6 +1880,7 @@ header a .img-fluid{ position: relative; z-index:6;}
     padding: 20px 15% 20px 4% !important;
     margin-bottom: 0;
 }
-
+.faq-content{ padding: 0 4%;}
+p{ text-align: justify;}
 
 }
