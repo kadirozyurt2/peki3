@@ -1,13 +1,17 @@
 import React from "react";
 
 const Free = () => {
+
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
+
   return (
     <>
       <div className="col-lg-4 item free">
         <h3>Free</h3>
         <p className="text">
-          Eaquesa quae ab illo inven tore dolor sit amet veritatis more legi
-          mano vet.
+         {t.freeTxt}
         </p>
         <div className="price">
           <b>0</b>
@@ -15,7 +19,7 @@ const Free = () => {
           <small>/ mo</small>
         </div>
         <a href="#">
-          <span>Get Started</span>
+          <span>{t.getStarted}</span>
         </a>
         <h4>Free includes</h4>
         <ul>

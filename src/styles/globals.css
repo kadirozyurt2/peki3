@@ -16,6 +16,7 @@ a, a img{
    outline:none;
    border:none;
 }
+p{ text-align: justify;}
 a:hover{
     text-decoration: none !important;
 }
@@ -1450,6 +1451,7 @@ header a .img-fluid{ position: relative; z-index:6;}
    }
 }
 @media screen and (max-width: 640px){
+
     header a .img-fluid{ width:50px;}
     [data-aos=fade-right]{ overflow: hidden; transform: translate3d(0px,0,0) !important;}
     [data-aos=fade-left]{ overflow: hidden; transform: translate3d(0px,0,0) !important;}
