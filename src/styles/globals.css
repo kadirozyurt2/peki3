@@ -1790,6 +1790,19 @@ header a .img-fluid{ position: relative; z-index:6;}
 
    header .item:hover .drop{ z-index:9;}
    .item .drop{ top:90%;}
+
+   .faq .container .faq-item {
+    border-top: 1px solid #e7e7e7;
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0 10px;
+    padding: 20px 15% 20px 4% !important;
+    margin-bottom: 0;
+}
+
 }
 
 .fade-in {
