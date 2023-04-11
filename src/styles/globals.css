@@ -812,7 +812,9 @@ h5 span{
 }
 .blog .container a .text p{
     font-size:22px;
-    font-weight: 600;
+    font-weight: 600; 
+    height:60px; 
+    display: flex;
 }
 footer{
    background:#100F0F;
