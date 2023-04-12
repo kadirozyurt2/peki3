@@ -35,7 +35,7 @@ export default {
     Increase: 'Peki satış ve pazarlamada size yardımcı olur ',
     getStart: 'Dene',
     MoreIncreas: 'Ürün satışlarını daha fazla arttırın, müşteri datasını güçlendirin, kişiselleştirilmiş bir deneyim sunun ve kesintisiz iletişim kurun.',
-    bringYour: 'Ürün ve <span>hizmetlerinize</span> peki ile hayat verin',
+    bringYour: 'Ürün ve hizmetlerinize peki <span>ile</span> hayat verin',
     automate: "Markanızı büyütmek için Chatbotunuzu Instagram, Facebook Messenger, Web, Whatsapp ve Twitter'a bağlağın müşterilerinizle kesintisiz iletişim kurun.",
     services: 'Hizmetler',
     agencies: 'Ajans',

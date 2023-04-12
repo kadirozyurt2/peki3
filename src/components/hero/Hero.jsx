@@ -16,10 +16,11 @@ const Hero = () => {
           <div className="row">
             <div className="col-lg-12">
               <img src="/images/home-banner.png" className="bg" />
-              <h1 data-aos="fade-down" data-aos-duration="1400">
-                <Fragment>
-                  {t.bringYour}
-                </Fragment>
+              <h1 
+                data-aos="fade-down" 
+                data-aos-duration="1400"
+                dangerouslySetInnerHTML={{__html: t.bringYour}}
+                >
               </h1>
               <p data-aos="fade-up" data-aos-duration="1400">
                 {t.automate}

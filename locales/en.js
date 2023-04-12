@@ -37,7 +37,7 @@ export default {
     MoreIncreas: 'More increase product sales, customer engage, generate qualified leads, and deliver instant support through doing personalized. ',
     Increase: 'Peki is Built for Sales and Marketing ',
     getStart: 'Get Started',
-    bringYour: 'Bring your products to life with Peki',
+    bringYour: 'Bring your products to life <span>with</span> Peki',
     automate: 'Automate interactive conversations in Instagram Messages, Facebook Messenger, Whatsapp and Twitter to grow your brand. ',
     services: 'Services',
     agencies: 'Agencies',
