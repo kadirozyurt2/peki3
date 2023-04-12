@@ -1,13 +1,14 @@
 import { useRouter } from "next/router";
 import en from "locales/en";
 import tr from "locales/tr";
-import React, { useState, useEffect } from "react";
+import React, {Fragment, useState, useEffect } from "react";
 
 
 const Hero = () => {
   const router = useRouter();
   const { locale, locales, defaultLocale } = router;
   const t = locale === "en" ? en : tr;
+  console.log('Bring Your: ', t.bringYour);
   return (
     <>
       <section className="home-banner">
@@ -16,7 +17,9 @@ const Hero = () => {
             <div className="col-lg-12">
               <img src="/images/home-banner.png" className="bg" />
               <h1 data-aos="fade-down" data-aos-duration="1400">
-                {t.bringYour}
+                <Fragment>
+                  {t.bringYour}
+                </Fragment>
               </h1>
               <p data-aos="fade-up" data-aos-duration="1400">
                 {t.automate}
