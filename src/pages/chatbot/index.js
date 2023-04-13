@@ -158,7 +158,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-1.jpg" alt="" />{" "}
               <span>{t.InstagramMarquee1}</span>
             </a>
           </div>
@@ -166,7 +166,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-2.jpg" alt="" />{" "}
               <span>{t.InstagramMarquee2}</span>
             </a>
           </div>
@@ -174,7 +174,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-3.jpg" alt="" />{" "}
               <span>{t.InstagramMarquee3}</span>
             </a>
           </div>
@@ -182,7 +182,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-1.jpg" alt="" />{" "}
               <span>{t.InstagramMarquee4}</span>
             </a>
           </div>
@@ -190,7 +190,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-2.jpg" alt="" />{" "}
               <span>{t.InstagramMarquee5}</span>
             </a>
           </div>
@@ -306,7 +306,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-1.jpg" alt="" />{" "}
               <span>{t.MessengerMarquee1}</span>
             </a>
           </div>
@@ -314,7 +314,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-2.jpg" alt="" />{" "}
               <span>{t.MessengerMarquee2}</span>
             </a>
           </div>
@@ -322,7 +322,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-3.jpg" alt="" />{" "}
               <span>{t.MessengerMarquee3}</span>
             </a>
           </div>
@@ -330,7 +330,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-1.jpg" alt="" />{" "}
               <span>{t.MessengerMarquee4}</span>
             </a>
           </div>
@@ -338,7 +338,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-2.jpg" alt="" />{" "}
               <span>{t.MessengerMarquee5}</span>
             </a>
           </div>
@@ -555,7 +555,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-1.jpg" alt="" />{" "}
               <span>{t.TwitterMarquee1}</span>
             </a>
           </div>
@@ -563,7 +563,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-2.jpg" alt="" />{" "}
               <span>{t.TwitterMarquee2}</span>
             </a>
           </div>
@@ -571,7 +571,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-3.jpg" alt="" />{" "}
               <span>{t.TwitterMarquee3}</span>
             </a>
           </div>
@@ -579,7 +579,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-1.jpg" alt="" />{" "}
               <span>{t.TwitterMarquee4}</span>
             </a>
           </div>
@@ -587,7 +587,7 @@ const Chatbot = () => {
         <SwiperSlide>
           <div className="item">
             <a href="#">
-              <img src="/images/icon1.svg" alt="" />{" "}
+              <img src="/images/sub-icon-2.jpg" alt="" />{" "}
               <span>{t.TwitterMarquee5}</span>
             </a>
           </div>
