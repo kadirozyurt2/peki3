@@ -8,7 +8,6 @@ const Hero = () => {
   const router = useRouter();
   const { locale, locales, defaultLocale } = router;
   const t = locale === "en" ? en : tr;
-  console.log('Bring Your: ', t.bringYour);
   return (
     <>
       <section className="home-banner">

@@ -6,7 +6,13 @@ import Faq from "@/components/faq/Faq";
 import StartLearning from "@/components/started/StartLearning";
 import References from "@/components/references/References";
 import Blog from "@/components/blog/Blog";
+
+
+
 const Home = () => {
+
+ 
+
   return (
     <>
       <Hero />
@@ -20,7 +26,7 @@ const Home = () => {
         description="Best companies in the Turkey"
       />
       <Blog 
-        title="Our trending blog"
+        
         description="We have so many great services for products"
       />
     </>

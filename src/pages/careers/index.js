@@ -49,7 +49,6 @@ const Careers = () => {
       />
       <Marquee
         title="What is our values?"
-        description="We have so many great services for your products"
       />
       <Faq title="Currently open positions" />
     </>

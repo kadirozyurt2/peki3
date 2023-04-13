@@ -18,8 +18,7 @@ const Services = () => {
         data-aos-duration="1400"
         className="services-boxs mt-5 pt-5"
       >
-        <h5>
-          {t.Oursuccesfull}
+        <h5 dangerouslySetInnerHTML={{__html: t.Oursuccesfull}}>
         </h5>
         <p className="text-center mb-5">
          {t.OursuccesfullText}

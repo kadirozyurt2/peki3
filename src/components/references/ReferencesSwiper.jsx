@@ -151,6 +151,13 @@ const ReferencesSwiper = () => {
             </a>
           </div>
         </SwiperSlide>
+        <SwiperSlide>
+          <div className="item">
+            <a href="#">
+              <img src="/images/daikin-logo.svg" alt="" />{" "}
+            </a>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

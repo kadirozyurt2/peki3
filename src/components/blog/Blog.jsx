@@ -1,13 +1,20 @@
-import React from "react";
+import { useRouter } from "next/router";
+import en from "locales/en";
+import tr from "locales/tr";
+import React, {Fragment, useState, useEffect } from "react";
 // import Item from "./Item";
 import Link from "next/link";
 
+
 const Blog = (props) => {
+  const router = useRouter();
+  const { locale, locales, defaultLocale } = router;
+  const t = locale === "en" ? en : tr;
+
   return (
     <>
       <section data-aos="fade-up" data-aos-duration="1400" className="blog">
-        <h5>
-          {props?.title}
+        <h5 dangerouslySetInnerHTML={{__html: t.Ourtrending}}>
         </h5>
         <p className="text-center">
             {props?.description}

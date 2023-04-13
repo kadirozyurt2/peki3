@@ -54,8 +54,7 @@ const Chatbot = () => {
       <Header />
 
       <div className="chatbot-wrapper">
-        <h5 className="mt-5 pt-5" id="instagram">
-         {t.ChatbotForInstagram} 
+        <h5 className="mt-5 pt-5" id="instagram" dangerouslySetInnerHTML={{__html: t.ChatbotForInstagram}}>
         </h5>
         {/* <p className="text-center mb-5">
           We help you to build good relationships with your customers
@@ -116,14 +115,13 @@ const Chatbot = () => {
         data-aos-duration="1400"
         className="boxs-info-area"
       >
-        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
-          {t.MorefeaturesInstagram}
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400" dangerouslySetInnerHTML={{__html: t.MorefeaturesInstagram}}>
         </h5>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                  <img src="/images/Increase.svg" alt="" />
+                  <img src="/images/ins-1.jpg" alt="" />
                   <h6>{t.InstagramTitle1}</h6>
                   <p>{t.InstagramTxt1}</p>
                 </Link>
@@ -131,7 +129,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/ins-2.jpg" alt="" />
                   <h6>{t.InstagramTitle2}</h6>
                   <p>{t.InstagramTxt2}</p>
                 </Link>
@@ -139,7 +137,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/ins-3.jpg" alt="" />
                   <h6>{t.SwiperCore}</h6>
                   <p>{t.InstagramTxt3}</p>
                 </Link>
@@ -212,8 +210,7 @@ const Chatbot = () => {
           </span>
         </a>
 
-        <h5 className="mt-5 pt-5" id="messenger">
-          {t.ChatbotForMessenger}
+        <h5 className="mt-5 pt-5" id="messenger" dangerouslySetInnerHTML={{__html: t.ChatbotAutomations}}>
         </h5>
         {/* <p className="text-center mb-5">
           We help you to build good relationships with your customers
@@ -266,14 +263,13 @@ const Chatbot = () => {
         data-aos-duration="1400"
         className="boxs-info-area"
       >
-        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
-          {t.MorefeaturesMessenger}
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400" dangerouslySetInnerHTML={{__html: t.MorefeaturesMessenger}}>
         </h5>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                  <img src="/images/Increase.svg" alt="" />
+                  <img src="/images/messenger1.jpg" alt="" />
                   <h6>{t.MessenTitle1}</h6>
                   <p>{t.MessenTxt1}</p>
                 </Link>
@@ -281,7 +277,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/messenger2.jpg" alt="" />
                   <h6>{t.MessenTitle2}</h6>
                   <p>{t.MessenTxt2}</p>
                 </Link>
@@ -289,7 +285,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/messenger3.jpg" alt="" />
                   <h6>{t.MessenTitle3}</h6>
                   <p>{t.MessenTxt3}</p>
                 </Link>
@@ -359,8 +355,7 @@ const Chatbot = () => {
           </span>
         </a>
 
-        <h5 className="mt-5 pt-5" id="whatsapp">
-          {t.ChatbotFor}
+        <h5 className="mt-5 pt-5" id="whatsapp" dangerouslySetInnerHTML={{__html: t.ChatbotFor}}>
         </h5>
 
         <section className="box-two-area">
@@ -417,14 +412,13 @@ const Chatbot = () => {
         data-aos-duration="1400"
         className="boxs-info-area"
       >
-        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
-          {t.MorefeaturesWhatsapp}
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400" dangerouslySetInnerHTML={{__html: t.MorefeaturesWhatsapp}}>
         </h5>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                  <img src="/images/Increase.svg" alt="" />
+                  <img src="/images/whatsapp1.jpg" alt="" />
                   <h6>{t.dahayuksek}</h6>
                   <p>{t.whatsapEntegrasyonu}</p>
                 </Link>
@@ -432,7 +426,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/whatsapp2.jpg" alt="" />
                   <h6>{t.kisisel}</h6>
                   <p>{t.kisiselTxt}</p>
                 </Link>
@@ -440,7 +434,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/whatsapp3.jpg" alt="" />
                   <h6>{t.dahafazlasatis}</h6>
                   <p>{t.dahafazlasatisTxt}</p>
                 </Link>
@@ -458,8 +452,7 @@ const Chatbot = () => {
           </span>
         </a>
 
-        <h5 className="mt-5 pt-5" id="twitter">
-          {t.ChatbotForTwitter}
+        <h5 className="mt-5 pt-5" id="twitter" dangerouslySetInnerHTML={{__html: t.ChatbotForTwitter}}>
         </h5>
 
         <section className="box-two-area">
@@ -517,14 +510,13 @@ const Chatbot = () => {
         data-aos-duration="1400"
         className="boxs-info-area"
       >
-        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400">
-          {t.MorefeaturesTwit}
+        <h5 className="mb-5" data-aos="fade-right" data-aos-duration="1400" dangerouslySetInnerHTML={{__html: t.MorefeaturesTwit}} >
         </h5>
         <div className="container">
           <div className="row justify-content-between">
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                  <img src="/images/Increase.svg" alt="" />
+                  <img src="/images/whatsapp1.jpg" alt="" />
                   <h6>{t.twitTitle1}</h6>
                   <p>{t.twitText1}</p>
                 </Link>
@@ -532,7 +524,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/whatsapp2.jpg" alt="" />
                   <h6>{t.twitTitle2}</h6>
                   <p>{t.twitText2}</p>
                 </Link>
@@ -540,7 +532,7 @@ const Chatbot = () => {
 
             <div className="col-lg-4 item">
                 <Link href={'javascript:;'}>
-                <img src="/images/Increase.svg" alt="" />
+                <img src="/images/whatsapp3.jpg" alt="" />
                   <h6>{t.twitTitle3}</h6>
                   <p>{t.twitText3}</p>
                 </Link>

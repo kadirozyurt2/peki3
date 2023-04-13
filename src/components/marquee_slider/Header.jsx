@@ -14,7 +14,7 @@ const Header = (props) => {
             <div className='container-fluid'>
                 <div className='row'>
                     <div className='col-lg-12'>
-                        <h5>{t.PekiHas}</h5>
+                        <h5 dangerouslySetInnerHTML={{__html: t.PekiHas}}></h5>
                         <p>{t.PekiHasTxt}</p>
                         {/* {
                             props?.title && (

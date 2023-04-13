@@ -13,9 +13,7 @@ const Faq = (props) => {
   return (
     <>
       <section data-aos="fade-down" data-aos-duration="1400" className="faq">
-        <h5>
-            {/* {props?.title} */}
-            {t.sssTitle}
+        <h5 className="mt-5 pt-5" dangerouslySetInnerHTML={{__html: t.sssTitle}}>
         </h5>
         <div className="container">
           <div className="row">
