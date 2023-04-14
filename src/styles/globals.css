@@ -16,7 +16,7 @@ a, a img{
    outline:none;
    border:none;
 }
-
+p{ text-align: justify;}
 a:hover{
     text-decoration: none !important;
 }
@@ -813,7 +813,7 @@ h5 span{
 .blog .container a .text p{
     font-size:22px;
     font-weight: 600; 
-    height:60px; 
+    height:60px;  text-align: left;
     display: flex;
 }
 footer{
@@ -1075,12 +1075,12 @@ footer .link-area a:nth-child(1){
     font-size:64px;
     font-weight: bold;
     text-align: center;
-    width:60%;
+    width:70%;
     margin:auto;
 }
 .peki-learn-detail-head p{
     font-size:16px;
-    text-align: center;
+    text-align: justify;
     margin:10px 0 0 0;
     font-size:20px;
 }
